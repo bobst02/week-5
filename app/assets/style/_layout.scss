@@ -1,0 +1,48 @@
+.aside {
+  height: 100vh;
+}
+
+.logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week5/logo-ANSWER.svg);
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.list {
+  height: calc(100% - 80px);
+
+  &_link {
+    position: relative;
+    &:hover {
+      background-color: #adb5bd;
+    }
+    &.active{
+      color: #198754;
+    }
+
+    &.active::before {
+      content: "";
+      width: 4px;
+      height: 40px;
+      border-left: 4px solid #198754;
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+.photo {
+  min-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.h-0 {
+  height: 0;
+}

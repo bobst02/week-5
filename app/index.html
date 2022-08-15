@@ -1,12 +1,140 @@
 ---
-title: 首頁
+title: Assignment
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: Assignment
 ---
 
-<h1>
-  這是一段話
-</h1>
-
-<div class="box"></div>
+<header class="header d-flex py-5">
+  <h2 class="me-5 fw-bold font-m">Assignment</h2>
+  <div class="header_nav d-flex justify-content-between align-items-center">
+    <p class="">All Courses
+      <span class="material-symbols-outlined text-success">
+        expand_more
+      </span>
+    </p>
+    <ul class="list-unstyled d-flex">
+      <li>
+        <a href="#" class="text-reset text-decoration-none me-4">
+          <span class="material-symbols-outlined">
+            search
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-reset text-decoration-none">
+          <span class="material-symbols-outlined">
+            notifications_active
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<section class="row">
+  <div class="col-4">
+    <p class="mb-1 fw-bold">All (4)
+      <span class="material-symbols-outlined text-success">
+        expand_more
+      </span>
+    </p>
+    <div class="card rounded-1">
+      <ul class="list-group list-group-flush list-unstyled">
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <p class="font-12">Chapter Assignment 2
+            <span class="d-block fs-6 fw-bold mt-1">Please check this file…</span></p>
+          <p class="font-12 text-end">4 hrs ago
+            <span class="d-block mt-2 text-secondary">Emily Wang</span></p>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <p class="font-12">Chapter Assignment 1
+            <span class="d-block fs-6 fw-bold mt-1">My Homework</span></p>
+          <p class="font-12 text-end">12 hrs ago
+            <span class="d-block mt-2 text-secondary">David Xu</span></p>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <p class="font-12">Final Assignment
+            <span class="d-block fs-6 fw-bold mt-1">Have a problem with this…</span></p>
+          <p class="font-12 text-end">18 hrs ago
+            <span class="d-block mt-2 text-secondary">Tony Wei</span></p>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <p class="font-12">Final Assignment
+            <span class="d-block fs-6 fw-bold mt-1">Did I do it right?</span></p>
+          <p class="font-12 text-end">19 hrs ago
+            <span class="d-block mt-2 text-secondary">Christina Lin</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-8">
+    <p class="text-end font-12 text-secondary mb-2">2 comments</p>
+    <div class="card rounded-1">
+      <div class="card-header p-3 d-flex justify-content-between">
+        <h3 class=" font-12">Chapter Assignment 2 / HTML&CSS
+          <span class="d-block fw-bold fs-6 mt-1">Please check this file for me, thanks!</span></h3>
+          <a href="#" class="text-reset">
+            <span class="material-symbols-outlined">
+              more_vert
+            </span>
+          </a>
+      </div>
+      <ul class="card-body list-unstyled">
+        <li class="d-flex border-bottom">
+          <img class="photo rounded-circle me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" alt="Emily Wang">
+          <div class="">
+            <p class="font-12 text-secondary mb-3"><span class="fw-bold d-block fs-6 text-dark">Emily Wang</span>10:38 AM (4 hours ago)</p>
+            <p class="font-14 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="bg-light text-success">div</span> is bigger than the height of the <span class="bg-light text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+            <button class="btn btn-light rounded-0 btn-outline-secondary text-dark mb-3"><span class="material-symbols-outlined me-2">
+                attach_file
+              </span>HW-2-David.zip</button>
+          </div>
+        </li>
+        <li class="d-flex py-3">
+          <img class="photo  rounded-circle me-3" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="Andy Chen">
+          <div class="">
+            <div class="d-flex justify-content-between mb-3">
+              <p class="font-12 text-secondary "><span class="fw-bold d-block fs-6 text-dark">Andy Chen (You)</span>13:24 AM (1 hours ago)</p>
+              <ul class="list-unstyled d-flex">
+                <li class="me-4"><a href="#" class="text-reset"><span class="material-symbols-outlined material-fill-0">
+                      star
+                    </span></a></li>
+                <li><a href="#" class="text-reset"><span class="material-symbols-outlined">
+                      edit
+                    </span></a></li>
+              </ul>
+            </div>
+            <p class="font-14 mb-3">
+              Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br>
+              <br>
+              You can:<br>
+              <ul class="list-disc">
+                <li>adjust the <span class="bg-light text-success">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or </li>
+                <li>change the <span class="bg-light text-success">display</span> so it isn’t inline.</li>
+              </ul>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- footer -->
+    <footer class="d-flex justify-content-between py-5">
+      <ul class="d-flex list-unstyled">
+        <li class="me-4">
+          <a href="#" class="text-reset"><span class="material-symbols-outlined">
+              chevron_left
+            </span></a>
+        </li>
+        <li>
+          <a href="#" class="text-reset"><span class="material-symbols-outlined">
+              chevron_right
+            </span></a>
+        </li>
+      </ul>
+      <div class="">
+        <button class="btn btn-outline-success me-3 py-32">Mark as read</button>
+        <button class="btn btn-success py-32">Reply</button>
+      </div>
+    </footer>
+  </div>
+</section>
